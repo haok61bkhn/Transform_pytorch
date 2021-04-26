@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import torch
-
+from torch.autograd import Variable
 class Transform:
     def __init__(self,mean=[0.5,0.5,0.5],std=[0.5, 0.5, 0.5]):
         self.pixel_scale = float(1.0)
